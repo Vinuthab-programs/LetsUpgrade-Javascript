@@ -1,0 +1,59 @@
+<html>
+<head>
+	<script src="calculator.js"></script>
+   
+	<style type="text/css">
+	
+		input[type="button"]{
+			border:none;
+			width:100%;
+			outline: none;
+		}
+		#wrap
+		{
+			margin:10%;
+		}
+		#clear{
+            width:20px;
+			height :100px;
+		}
+	</style>
+</head>
+<body>
+	<h2 align="center">Simple Calculator</h2>
+	<div id='wrap'>
+	<table border="1" align="center" >
+		<tr>
+			<td colspan="3"><input type="text" id="result" readonly></td>
+			<td><input type="button" value="+" onClick="d('+')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onClick="d('1')"></td>
+			<td><input type="button" value="2" onClick="d('2')"></td>
+			<td><input type="button" value="3" onClick="d('3')"></td>
+			<td><input type="button" value="-" onClick="d('-')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onClick="d('4')"></td>
+			<td><input type="button" value="5" onClick="d('5')"></td>
+			<td><input type="button" value="6" onClick="d('6')"></td>
+			<td><input type="button" value="/" onClick="d('/')"></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onClick="d('7')"></td>
+			<td><input type="button" value="8" onClick="d('8')"></td>
+			<td><input type="button" value="9" onClick="d('9')"></td>
+			<td><input type="button" value="%" onClick="d('%')"></td>
+		</tr>
+		<tr>
+			<td colspan=""><input type="button" value="*" onClick="d('*')"></td>
+			<td><input type="button" value="0" onClick="d('0')"></td>
+			<td><input type="button" value="." onClick="d('.')"></td>
+			<td><input type="button" value="=" onClick="solve()"></td>
+			
+			<td ><input type="button" value="C"   onClick="cleard()"></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
