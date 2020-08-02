@@ -1,0 +1,96 @@
+body{
+    background : url(./bg1.jpg)
+}
+
+.container{
+     position : absolute;
+     height:25pc;
+     width:20pc;
+     margin:auto;
+     top:0;
+     bottom:0; 
+     left:0; 
+     right:0;
+    backdrop-filter:blur(5px);
+    box-shadow: 0 0 55px black;
+}
+
+.addtxt{
+    position:absolute;
+    height:2px;
+     width:60%;
+     margin:auto;
+     top:25px;
+    left:0; 
+     right:0;
+     outline:none;
+     border:none;
+     padding:20px;
+     padding-right:50px;
+}
+
+.addbtn{
+    position:absolute;
+    height:40px;
+     width:40px;
+     margin:auto;
+     top:15px;
+     right:35px;
+     cursor: pointer;
+     background-color:transparent;
+     outline:none;
+     border:0;
+}
+.addbtn img{
+    position:absolute;
+    height:35px;
+    margin:auto;
+    top:25px;
+    bottom:0;
+    right:0;
+    left:0;
+
+}
+
+.list
+{
+    position:absolute;
+    height:75%;
+     width:100%;
+     margin:auto;
+     right:0;
+     left:0;
+     bottom:0;
+     overflow-y: scroll;
+     overflow-x : 0;
+}
+.list::-webkit-scrollbar{
+  -webkit-appearance: none;
+   appearance: none;
+}
+.elements{
+    position: relative;
+    height:25px;
+    width:60%;
+    right:0;
+    left:6px;
+    text-align:left;
+    transition:-2s;
+    padding:10px;
+    background : #fff;
+    cursor:pointer;
+    border-radius:2px;
+    padding-right:80px;
+    word-wrap: wrap break-word;
+}
+.elements:hover{
+    transform: scale(1.1);
+}
+.remove{
+    position:absolute;
+    margin:auto;
+    height:30px;
+    top:0;
+    bottom:0;
+    right:10px;
+}
